@@ -49,6 +49,11 @@ list1[1]
 list1[2]
 list1[2][[1]]
 
+t = list1[3][1]
+t
+mode(t)
+unlist(t)
+
 # paste()   # 添加\t到两字符串之间
 paste("apple","bear",sep = "\t")
 
