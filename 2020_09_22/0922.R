@@ -1,31 +1,33 @@
 # 需要记住的函数
 rowSums()
-data(mtchars)
-rowsum(mtchars)
+data(mtcars)
+rowSums(mtcars)  # 行求和
 
 # 
-colSums()
+colSums(mtcars)  # 列求和
 
 # 
 str()
-str(mtchars)
+str(mtcars) 
 
 #
 head()
-head(mtchars,10)
-tail()
-tail(mtchars,10)
+head(mtcars,10)
+tail()    # 尾部
+tail(mtcars,10)
 
+
+?attach()
 # data
-data(mtchars)
-attch(mtchars)
-detach(mtchars)
+data(mtcars)
+attach(mtcars)   #附加
+detach(mtcars)   #分离
 
 
 # 难点
-apply()
-apply(mtchars,2,mean)
-apply(mtchars,1,mean)
+apply()   # for循环
+apply(mtcars,2,mean)
+apply(mtcars,1,mean)
 
 #
 list()
@@ -43,9 +45,14 @@ res
 class(res)
 mode(res)
 
-# paste()
+list1[1]
+list1[2]
+list1[2][[1]]
+
+# paste()   # 添加\t到两字符串之间
 paste("apple","bear",sep = "\t")
 
-# gsub
+# gsub # 替换
 gsub1 <- "apple"
-gsubs("a","0",gsub1)
+gsub("a","0",gsub1)
+
