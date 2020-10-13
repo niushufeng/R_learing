@@ -7,12 +7,12 @@ PuroB <- Puromycin[Puromycin$conc > 0.5]
 # plot function,abline()
 plot(rate ~ conc,data = PuroA)
 abline(lm(rate ~conc,data = PuroA))
-abline(a = 100,b =105,col = "blue")
-abline(h = 200, col = 'red')
+abline(a = 100,b =105,col = "blue")  #直线
+abline(h = 200, col = 'red')  #水平线
 abline(v = 0.6,col = 'green')
 
 # par(mfrow = c(m,n))
-par(mfrow = c(1,1))  //1行1列
+par(mfrow = c(1,1))  #1行1列
 plot(rate ~ conc,data = PuroA)
 
 # plot function 
@@ -36,5 +36,6 @@ while(i <= 5){
   print(1:i)
   i = i + 1
   }
+
 
 
