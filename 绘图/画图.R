@@ -6,20 +6,20 @@ PuroB <- Puromycin[Puromycin$conc > 0.5]
 
 # plot function,abline()
 plot(rate ~ conc,data = PuroA)
-abline(lm(rate ~cinc,data = PuroA))
+abline(lm(rate ~conc,data = PuroA))
 abline(a = 100,b =105,col = "blue")
 abline(h = 200, col = 'red')
 abline(v = 0.6,col = 'green')
 
 # par(mfrow = c(m,n))
-par(mfrow = c(1,1))
+par(mfrow = c(1,1))  //1行1列
 plot(rate ~ conc,data = PuroA)
 
 # plot function 
 plot(rate ~conc,data = PuroA, pch = 2, col =4,
      cex = 2.5 ,xlim =c(0,1.2), ylim = c(40,210),
      ylab = "concentration",
-     xlab = "Rate",cex.main = 3     )
+     xlab = "Rate",cex.main = 3 )
 title(main = "Puromycin", cex.lab = 1.2)
 
 # ifelse
@@ -36,4 +36,5 @@ while(i <= 5){
   print(1:i)
   i = i + 1
   }
+
 
