@@ -21,3 +21,19 @@ plot(rate ~conc,data = PuroA, pch = 2, col =4,
      ylab = "concentration",
      xlab = "Rate",cex.main = 3     )
 title(main = "Puromycin", cex.lab = 1.2)
+
+# ifelse
+x = -5
+ifelse(x >= 0, sqrt(x), x * x)
+
+# while, for ,commonly used loop in R is apply , lapply,sapply
+for(i in 1:5)
+  print(1:i)
+
+rm(list =ls())
+i = 0
+while(i <= 5){
+  print(1:i)
+  i = i + 1
+  }
+
