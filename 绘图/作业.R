@@ -23,3 +23,22 @@ crossprod(x,y)
 x%o%y
 x%*%t(y)
 outer(x,y)
+
+
+# 2.5
+Mysolve <- function(f,min,max,e){
+  result = list()
+  middle = (min + max)/2
+  if(f(min) * f(max) < 0){
+    while (abs(f(middle)) > e) {
+ 
+      {if(f(min) * f(middle) < 0) max = middle
+      else min = middle}
+      middle = (min + max)/2
+    }
+    result = middle
+  }else{
+    result = "can't solve this problem"
+  }
+  result
+}
