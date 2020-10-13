@@ -9,3 +9,16 @@ C = A + B;
 # （2）
 D = A %*% B;
 # （3)
+
+# 2.4
+x = 1:5
+y = seq(2,10,by =2) # 定义xy
+# 内积
+x %*% y 
+t(x)%*%y
+crossprod(x,y)
+
+# 外积
+x%o%y
+x%*%t(y)
+outer(x,y)
