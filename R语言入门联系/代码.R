@@ -12,3 +12,5 @@ stem(x) #茎叶图
 x <- rnorm(500)
 y <- x + rnorm(500) #构造一个线性关系
 plot(y~x) #散点图
+a=lm(y~x) #做回归
+abline(a,col = "red") #红色曲线
