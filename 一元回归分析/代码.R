@@ -23,3 +23,16 @@ abline(lm.reg)
 res <- residuals(lm.reg)
 plot(res)
 text(12,res[12],labels = 12,adj = (0.05))
+
+
+#例9.2.2
+x <- c(318,910,200,409,415,502,314,1210,1022,1225)
+y <- c(524,1019,638,815,913,928,605,1516,1219,1624)
+lm.reg <- lm(y~1+x)
+summary(lm.reg)
+confint(lm.reg,level = 0.95)
+
+# 对误差分布独立同正态分布的假设进行检验
+op <-par(mfrow = c(2,2))
+plot(lm.reg)
+par(op)
